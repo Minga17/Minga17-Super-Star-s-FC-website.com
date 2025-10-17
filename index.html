@@ -1,0 +1,357 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Super Stars FC — Omaha, NE</title>
+  <meta name="description" content="Super Stars FC — a new soccer club from Omaha, NE. Founded June 3, 2025. Roster, schedule, media, and club info." />
+
+  <!-- Link to stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="image0.jpeg" type="image/jpeg">
+
+  <!-- Font Awesome for social icons -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+  <style>
+    :root {
+      --font: var(--font);
+      --font-size: 20px;
+      --light: #f4f4f4;
+      --dark: #111;
+      --accent: #e63946;
+    }
+    body { 
+      margin:0; 
+      color:var(--light); 
+      font-family: var(--font);
+      font-size: 20px;
+      line-height: 1.6;
+      background: url("background01.jpeg") no-repeat center center fixed; 
+      background-size: cover; 
+    }
+
+    img { max-width:100%; height:auto; display:block; }
+    .container { max-width:1100px; margin:0 auto; padding:1rem; }
+    header.site-header { display:flex; align-items:center; gap:1rem; border-bottom:4px solid var(--accent); background:rgba(0,0,0,0.7); color:var(--light); }
+    header .brand { display:flex; align-items:center; gap:.75rem; padding:.5rem 1rem; }
+    nav { margin-left:auto; padding-right:1rem; }
+    nav a { color:var(--light); text-decoration:none; margin-left:.75rem; }
+    h1,h2 { margin:.2rem 0; }
+    section { padding:2rem 0; border-bottom:1px solid rgba(255,255,255,0.2); }
+    .roster-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; }
+    .player-card { border:1px solid #ddd; padding:.5rem; border-radius:6px; background:#fff; color:#000; text-align:center; }
+    .player-img { width:100%; height:160px; object-fit:cover; }
+    table { width:100%; border-collapse:collapse; background:#fff; color:#000; }
+    th, td { padding:.5rem; border:1px solid #ddd; text-align:left; }
+    footer { padding:1rem; text-align:center; font-size:.9rem; background:#111; color:var(--light); }
+    .gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:.5rem; }
+    .gallery-photo { background:#eee; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+    .gallery-photo img { width:100%; height:100%; object-fit:cover; }
+  </style>
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container container-flex">
+      <div class="brand" aria-label="Super Stars FC logo and name">
+        <img src="image0.jpeg" alt="Super Stars FC logo" width="72" height="72">
+        <div>
+          <h1>Super Stars FC</h1>
+          <p class="club-founded">Omaha, NE — Founded June 3, 2025</p>
+        </div>
+      </div>
+
+      <!-- Main navigation -->
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#roster">Roster</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#join">Join Us</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="home" class="site-main">
+    <div class="container">
+
+      <!-- HERO / INTRO -->
+      <section id="hero" aria-label="Club intro">
+        <h2>Welcome — Super Stars FC</h2>
+        <p>
+          Super Stars FC is a newly founded soccer club based in Omaha, NE. Founded June 3, 2025 by a group of friends determined to reach the highest level of soccer possible.
+          This site will contain roster info, upcoming matches, photos, and ways to get involved.
+        </p>
+        <p><strong>Club mission:</strong> Play hard, grow together, and reach the highest level we can.</p>
+      </section>
+
+      <!-- ROSTER -->
+      <section id="roster" aria-labelledby="roster-heading">
+        <h2 id="roster-heading">Team Roster</h2>
+        <div class="roster-grid" aria-live="polite">
+          <article class="player-card">
+            <img src="PHOTO-2025-09-08-00-27-52.jpg" alt="Player John" class="player-img">
+            <h3>John</h3>
+            <p>Position: Forward</p>
+            <p>Shirt #: 22</p>
+          </article>
+
+          <article class="player-card">
+            <img src="PHOTO-2025-09-08-00-27-53.jpg" alt="Player K.J Shimalo" class="player-img">
+            <h3>Shimalo</h3>
+            <p>Position: Midfielder</p>
+            <p>Shirt #: 11</p>
+          </article>
+
+          <article class="player-card">
+            <img src="PHOTO-2025-09-08-00-27-50.jpg" alt="Player Espoir" class="player-img">
+            <h3>Espoir</h3>
+            <p>Position: Defender</p>
+            <p>Shirt #: 5</p>
+          </article>
+
+          <article class="player-card">
+            <img src="PHOTO-2025-09-08-00-27-51.jpg" alt="Player K Mardochee" class="player-img">
+            <h3>Mardochee</h3>
+            <p>Position: Defender</p>
+            <p>Shirt #: 16</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SCHEDULE -->
+      <section id="schedule" aria-labelledby="schedule-heading">
+        <h2 id="schedule-heading">Upcoming Matches & Results</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Opponent</th>
+              <th>Location</th>
+              <th>Time</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>16 August 2025</td>
+              <td>Togolese Soccer Association</td>
+              <td>Away (Papillion NE)</td>
+              <td>5:30 PM</td>
+              <td>8-5</td>
+            </tr>
+            <tr>
+              <td>24 August 2025</td>
+              <td>Omaha Elite FC</td>
+              <td>Away (Elkhorn NE)</td>
+              <td>5:30 PM</td>
+              <td>4-2</td>
+            </tr>
+            <tr>
+              <td>31 August 2025</td>
+              <td>YAZIDI FC</td>
+              <td>Home (Omaha)</td>
+              <td>5:30 PM</td>
+              <td>0-2</td>
+            </tr>
+            <tr>
+              <td>6 September 2025</td>
+              <td>Omaha Stars FC</td>
+              <td>Home (Omaha NE)</td>
+              <td>5:30 PM</td>
+              <td>5-3</td>
+            </tr>
+            <tr>
+              <td>20 September 2025</td>
+              <td>Omaha Elite FC</td>
+              <td>Home (Omaha NE)</td>
+              <td>5:30 PM</td>
+              <td>5-4</td>
+            </tr>
+            <tr>
+              <td>04 October 2025</td>
+              <td>YAZIDI FC</td>
+              <td>Away (Lincoln NE)</td>
+              <td>5:30 PM</td>
+              <td>4-2</td>
+            </tr>
+            <tr>
+              <td>25 October 2025</td>
+              <td>Vunja Vikwazo FC</td>
+              <td>Away (Kansas City MO)</td>
+              <td>5:30 PM</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading">Media / Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-photo"><img src="2bky.jpeg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="image3.jpeg" alt="Match photo 2"></div>
+          <div class="gallery-photo"><img src="image2.jpeg" alt="Training photo 1"></div>
+          <div class="gallery-photo"><img src="image1.jpeg" alt="Training photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc0.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc1.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc2.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc3.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc4.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc5.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc6.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc7.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc8.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssfc9.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf0.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf1.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf2.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf3.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf4.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf5.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf6.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf7.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf8.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssf9.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc0.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc1.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc2.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc3.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc4.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc5.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc6.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc7.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc8.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc9.jpg" alt="Match photo 1"></div>
+          <div class="gallery-photo"><img src="ssc10.jpg" alt="Match photo 1"></div>
+          <div class="gallery-video"><video src="ssfc vs omsfc goals.mp4" controls></video></div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About the Club</h2>
+        <p>
+          Super Stars FC was formed by a core group of players and supporters who share a passion for the game and a goal to push each other to the highest level.
+          Practices are three times weekly; we welcome players who bring commitment and teamwork. We believe in growing together both on and off the field.
+          Our vision is to become a leading soccer club in the region, and play the in high level as competitive games with integrity, known for our competitive spirit, sportsmanship, and community involvement.
+        </p>
+      </section>
+      <section id="join" aria-labelledby="join-heading">
+        <h2 id="join-heading">Join Super Stars FC</h2>
+        <p>
+          We are always looking for passionate players to join our team. If you're interested in becoming a part of Super Stars FC, please reach out to us! We welcome players of all skill levels who are committed to growth and teamwork. Here's how you can get involved:
+        </p>
+        <ul>
+          <li><strong>Volunteers:</strong> Help with match setup, media, and club events.</li>
+          <li><strong>Sponsors & Supporters:</strong> Support the club financially or through in-kind donations, and help us grow our community presence. Always cheer us on games, and all contributions are greatly appreciated!</li>
+        </ul>
+        <p>Fill out the contact form below to express your interest in joining Super Stars FC!. We look forward to hearing from you!, and we'll get back to you as soon as possible.</p>
+        <P>Thank you for your interest in Super Stars FC!</P>   
+      </section>
+      <section id="faq" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">FAQ - New Players, Supporters, Volunteers & Parents</h2>
+
+        <details>
+          <summary>Who can join the club?</summary>
+          <p>We welcome players aged 16 and above. We believe, and welcome players of all backgrounds to join our team with a good commitment and teamwork.</p>
+        </details>
+
+        <details>
+          <summary>When and where are practices held?</summary>
+          <p>Practices are held three times a week, typically on Fridays, Saturdays, and Sundays evenings, but the exact times and locations will be communicated to team members via group chat.</p>
+        </details>
+
+        <details>
+          <summary>What should I bring to practice?</summary>
+          <p>Players should bring appropriate soccer gear, including cleats, shin guards, water bottles, any personal items they may need, and a positive attitude. We recommend arriving a few minutes early to warm up!</p>
+        </details>
+
+        <details>
+          <summary>What is the club's code of conduct?</summary>
+          <p>All members are expected to uphold the values of respect, integrity, and sportsmanship. We believe in creating a positive environment for everyone involved.</p>
+        </details>
+
+        <details>
+          <summary>What is the club's policy on player conduct?</summary>
+          <p>We expect all players to conduct themselves in a manner that reflects positively on the club. This includes showing respect to coaches, teammates, opponents, and officials at all times.</p>
+        </details>
+
+        <details>
+          <summary>How much does it cost to join the club?</summary>
+          <p>We aim to keep our membership fees affordable. There may be a small fee for league registration and equipment, but we strive to make soccer accessible for all. Please contact us for specific pricing information and any available financial assistance options!</p>
+        </details>
+
+        <details>
+          <summary>How can I support the club?</summary>
+          <p>You can support Super Stars FC by attending matches, volunteering for events, spreading the word about our club, and considering sponsorship opportunities. Every bit of support helps us grow!</p>
+        </details>
+
+        <details>
+          <summary>How and who can I contact for the club more information?</summary>
+          <p>You can reach out to us via the contact form below, or through our email at:</p>
+          <ol>
+            <li>...Let us know how we can help you! <abbr title="Super Stars FC Contact">
+              <a href="mailto:superstarsfcofficial25@gmail.com">SSFC25@</a>
+            </abbr>.</li>
+            <li>...Feel free to reach out to us! <abbr title="Super Stars FC Contact">
+              <a href="mailto:superstarsfc669@gmail.com">SSFC669@</a>
+            </abbr>.</li>
+            <li>...We are happy to answer any questions you may have!</li> 
+          </ol>
+        </details>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact & Join</h2>
+        <form id="contact-form" action="https://formspree.io/f/mandlynj" method="POST">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" required placeholder="Full name">
+
+          <label for="email">Email Address</label>
+          <input type="email" name="email" required placeholder="you@example.com">
+
+          <label for="message">Message</label>
+          <textarea name="message" rows="4" required placeholder="Tell us about your interest"></textarea>
+
+          <button type="submit">Send message</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© Super Stars FC — Omaha, NE. </p>
+      <p>© Founded June 3, 2025.</p>
+      <p>Follow us: <br>
+        <a href="https://www.facebook.com/share/172HQUJiQr/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a> |
+        <a href="https://www.instagram.com/super_starsfc_fc?igsh=MW81NG51eWY3ZXRsMw==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a> |
+        <a href="https://x.com/SuperStars75843?t=fjvG0PvJOT_GdvD4d6TK-SA&s=09" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a> |
+        <a href="https://youtube.com/@superstarsfc-t8b?si=R8PD8J1ooc61QkCx" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube</a> |
+        <a href="https://chat.whatsapp.com/I23Q47ORVeREg4Awx0nYO9?mode=wwt" target="blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
+
+
